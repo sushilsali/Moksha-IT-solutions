@@ -1,0 +1,84 @@
+header
+{
+	background-color: RGB(12,60,96);
+	padding: 2%;
+
+
+}
+
+.logo
+{
+	color:white;
+	font-size: 15px;
+}
+.navbar-brand
+{
+
+ color: white;
+
+}
+
+#brand{
+
+	color: RGB(125,202,218);
+}
+
+.well
+{
+	background-color:RGB(209,224,235);
+	color:white;
+	font-weight: bold;
+	font-size: 19px;
+}
+
+.customwell
+{
+	background-color: RGB(12,60,96);
+	color:RGB(201,218,229);
+	text-align: center;
+	
+}
+.customwelll
+{
+background-color: white;
+	color:RGB(201,218,229);
+	text-align: center;
+}
+
+footer
+{
+	
+	position: fixed;
+	bottom:0px;
+	margin-left:0px;
+	background-color:RGB(12,60,96);
+	text-align: center;
+	color:RGB(125,202,218);
+}	
+.navbar-toggle
+{
+ background-color:white; 
+ color:black;
+
+}
+.icon-bar{
+	color:black;
+}
+.jumbotron
+{
+
+}
+
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+
+@keyframes scaleUp {
+    from    { opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+
+/*.ng-enter           { animation: scaleUp 0.5s both ease-in; z-index: 8888; }
+.ng-leave           { animation: slideOutLeft 0.5s both ease-in; z-index: 9999; }*/
+
+

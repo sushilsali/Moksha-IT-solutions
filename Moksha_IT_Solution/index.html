@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+ <title>Moksh IT Solution</title>
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+
+   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+ <script src="bootstrap/js/jquery.min.js" ></script>
+
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>-->
+  <script type="text/javascript" src="Javascript/angular.min.js"></script>
+  <!--<script type="	text/javascript" src="Javascript/angular-route.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+
+
+ <link rel="stylesheet" type="text/css" href="CSS/style.css">
+ <script type="text/javascript" src="Javascript/script.js"></script>
+ <link rel="shortcut icon" href="images/favicon.ico" />
+ <meta keywords="IT company,Moksha,startup,solutions">
+
+</head>
+<body ng-app="app" ng-controller="homeController">
+<div class="container">
+<header class="row">
+	<!-- <div class ="col-xs-3">
+ 	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar">hffhf</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+  	</div> -->
+	<div class=" col-xs-2 col-sm-3 col-md-3 col-lg-3">
+		<span class="logo">Logo</span>
+	</div>
+	<div class=" col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-8 col-md-3 col-md-offset-9">
+		<span class="navbar-brand">Moksha <span id="brand"> IT Solution</span></span>
+	</div>
+
+</header>
+<nav class="row" id="myNavbar">
+<ul class=" col-sm-12 nav nav-pills nav-justified" style="padding-right:0px;">
+    <li class="active"><a href="#/home">Home</a></li>
+    <li><a href="#/journey">About Us</a></li>
+    <li><a href="#/services">Services</a></li>
+    <li><a href="#/contact">Contact Us</a></li>
+    <li><a href="#/contact">Menu</a></li>
+  </ul>
+</nav>
+<ng-view>
+	
+</ng-view>
+
+ <footer class="container" style="padding:0px;">
+ 		<div class="row" style="margin:0px;">
+		<div class="col-sm-12 col-md-12" >
+		<p>&copy; All rights reserved.</p>
+		</div>
+		</div>
+ </footer>
+ </div>
+</body>
+</html>
