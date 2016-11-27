@@ -1,4 +1,4 @@
-var app= angular.module("app",["ngRoute"]);
+var app= angular.module("app",["ngRoute","ngAnimate"]);
 app.config(function($routeProvider){
 
 $routeProvider.when("/home",{
@@ -7,6 +7,11 @@ $routeProvider.when("/home",{
 }).when("/journey",{
  
    templateUrl:"Templates/aboutus.html",
+
+}).when("/contact",{
+ 
+   templateUrl:"Templates/contact.html",
+
 
 }).otherwise({
 	templateUrl:"Templates/home.html",
