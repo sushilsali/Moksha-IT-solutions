@@ -1,10 +1,37 @@
 header
 {
-	background-color: RGB(12,60,96);
+	background-color:RGB(80,178,187);
 	padding: 2%;
 
-
 }
+nav{
+	background-color:RGB(80,178,187);
+}
+.row
+{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.nav-pills>li>a
+{
+	color:white;
+	/*RGB(24,67,67)*/
+}
+
+ 
+.nav-pills li.active a:hover
+{
+		color:RGB(24,67,67) !important;
+	background-color: white;
+}
+
+.nav-pills li a:hover ,.nav-pills li.active a:visited 
+{
+	color:RGB(24,67,67) !important;
+	background-color: white;
+}
+
 
 .logo
 {
@@ -13,9 +40,7 @@ header
 }
 .navbar-brand
 {
-
  color: white;
-
 }
 
 #brand{
@@ -33,27 +58,27 @@ header
 
 .customwell
 {
-	background-color: RGB(12,60,96);
-	color:RGB(201,218,229);
-	text-align: center;
+	background-color:RGB(173,232,237);
+	/* RGB(12,60,96);*/
+	color:white;
+	/*RGB(201,218,229)*/
+	text-align: left;
 	
 }
 .customwelll
 {
-background-color: white;
+	background-color: white;
 	color:RGB(201,218,229);
-	text-align: center;
+	text-align:left;
 }
 
 footer
 {
 	
-	position: fixed;
-	bottom:0px;
 	margin-left:0px;
-	background-color:RGB(12,60,96);
+	background-color:RGB(80,178,187);
 	text-align: center;
-	color:RGB(125,202,218);
+	color:white;
 }	
 .navbar-toggle
 {
@@ -71,14 +96,25 @@ footer
 
 /* slide in from the bottom */
 @keyframes slideOutLeft {
-    to      { transform: translateX(-100%); }
+    to      { -webkit-transform: translateX(-100%); }
 }
 
 @keyframes scaleUp {
     from    { opacity: 0.3; -webkit-transform: scale(0.8); }
 }
 
-/*.ng-enter           { animation: scaleUp 0.5s both ease-in; z-index: 8888; }
-.ng-leave           { animation: slideOutLeft 0.5s both ease-in; z-index: 9999; }*/
+@keyframes slideInRight {
+    from    { -webkit-transform:translateX(100%); }
+    to      { -webkit-transform: translateX(0); }
+}
+
+.ng-enter-active        
+{ animation: slideInRight 100s linear ease-in; 
+ z-index: 8888; 
+}
+.ng-leave           
+{ animation: slideOutLeft 0.5s both ease-in; 
+	z-index: 9999; 
+}
 
 
