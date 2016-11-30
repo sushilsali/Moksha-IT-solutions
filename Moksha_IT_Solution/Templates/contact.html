@@ -1,28 +1,5 @@
 <div id="contact">
-<script>
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-
-function initialize() {
-var mapProp = {
-  center:myCenter,
-  zoom:12,
-  scrollwheel:false,
-  draggable:false,
-  mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-var marker = new google.maps.Marker({
-  position:myCenter,
-  });
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
-  <h2 class="text-center">CONTACT</h2>
+<h2 class="text-center">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
       <p>Contact us and we'll get back to you within 24 hours.</p>
@@ -51,16 +28,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
       </div>
     </div>
   </div>
-<div id="googleMap" style="height:300px;width:100%;">
+<div id="googleMap" style="height:300px;width:100%;" ng-controller="mapController">
   
 </div>
-
-
-
 <div class="row" style="padding:2%;">
   <div class="col-sm-offset-6">
   <button type="button" class="btn btn-info" style="">
-  <a href="#/journey"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a href="#/journey" ng-keypress="On"> <span class="glyphicon glyphicon-chevron-left"></span></a>
   </button>
   </div>
 </div>  
